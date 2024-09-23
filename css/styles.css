@@ -277,6 +277,9 @@ img.card-img-top {
   height: 230px;
   object-fit: cover;
 }
+.carousel-news .carousel-item .card-body {
+  height: 150px;
+}
   @media only screen and (max-width: 900px) {
     
     .content-box {
@@ -303,6 +306,7 @@ img.card-img-top {
  
   margin-bottom: 30px;
 }
+
   
    
     img.img-2-silider {
