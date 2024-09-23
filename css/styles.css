@@ -28,7 +28,7 @@ body {
   filter: brightness(0.1);
 }
 .text-objetivo {
-  background-image: url(../assets/imgs/trees.png);
+  background-image: url(assets/imgs/trees.png);
 }
 .container.card-materials img {
   width: 100%;
@@ -201,7 +201,7 @@ body {
     position: relative;
     width: 100%;
     overflow: hidden;
-    background-image: url(../assets/imgs/gradient-resi-2.png);
+    background-image: url(assets/imgs/gradient-resi-2.png);
   }
  
   .service-box img {
@@ -223,7 +223,7 @@ section.cards-section img {
 }
   @media only screen and (min-width: 1200px) {
     .text-objetivo {
-      background-image: url(../assets/imgs/trees.png);
+      background-image: url(assets/imgs/trees.png);
       padding: 3rem;
       position: relative;
       top: -2rem;
@@ -233,7 +233,7 @@ section.cards-section img {
       position: relative;
       width: 100%;
       overflow: hidden;
-      background-image: url(../assets/imgs/gradient-resi-2.png);
+      background-image: url(assets/imgs/gradient-resi-2.png);
         padding-bottom: 15rem;
         background-position-y: 77%;
         background-position-x: center;
@@ -272,6 +272,10 @@ section.cards-section img {
 }
 .carousel-control-next-icon, .carousel-control-prev{
   filter: contrast(0.5);
+}
+img.card-img-top {
+  height: 230px;
+  object-fit: cover;
 }
   @media only screen and (max-width: 900px) {
     
@@ -549,7 +553,7 @@ figure.image.image-1 {
     height: 160px;
 }
   .box {
-    background-image: url(../assets/imgs/tacho.png);
+    background-image: url(assets/imgs/tacho.png);
    
     background-size: contain;
     margin: auto;
@@ -596,7 +600,7 @@ figure.image.image-1 {
 }
 
 .background-materials {
-  background-image: url(../assets/imgs/img-resi.jpg);
+  background-image: url(assets/imgs/img-resi.jpg);
   height: 31rem;
   width: 100%;
   border-bottom-right-radius: 6rem;
