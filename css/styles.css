@@ -21,6 +21,25 @@ body {
 }.navbar-brand img {
   width: 40px;
   margin-right: 10px;
+  filter: contrast(0.7);
+}
+.navbar-toggler-icon {
+  
+  filter: brightness(0.1);
+}
+.text-objetivo {
+  background-image: url(/assets/imgs/trees.png);
+}
+.container.card-materials img {
+  width: 100%;
+}
+
+.text-objetivo img {
+  width: 70px;
+}
+.text-objetivo h3 {
+ color: white;
+ width: 100%;
 }
 
   /* Hero Section */
@@ -45,19 +64,19 @@ body {
   .carousel-caption h1 {
     font-size: 48px;
     font-weight: bold;
-    color: #1b1b32;
+    color: #ffffff;
   }
   .carousel-caption p {
     font-size: 18px;
-    color: #818181;
+    color: #ffffff;
   }
   .carousel-caption a {
     padding: 10px 20px;
-    background-color: #33aa39;
+    background-color: #04b63c;
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
-    border: solid 2px #363636;
+    
     font-weight: 600;
   }
   .carousel-caption {
@@ -92,6 +111,11 @@ body {
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
+  img.category-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
 
   /* Services Section */
   .services {
@@ -108,6 +132,7 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
   }
 
   /* CTA Section */
@@ -171,28 +196,54 @@ body {
       font-family: system-ui;
       
   }
-  .carousel-inner {
+ 
+  .gradient-inner{
     position: relative;
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(58deg, rgb(84 211 118 / 40%) 17%, rgb(49 220 63 / 23%) 35%, rgb(179 235 214 / 48%) 69%, rgb(44 171 78 / 39%) 97%);
-    
+    background-image: url(../assets/imgs/gradient-resi-2.png);
   }
+ 
+  .service-box img {
+    width: 40%;
+    padding-bottom: 15px;
+}
+.text-objetivo h3 {
+  color: white;
+  width: 100%;
+  padding: 10%;
+  text-align: right;
+}
+.carousel-news {
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+section.cards-section img {
+  width: 67px;
+}
   @media only screen and (min-width: 1200px) {
-    .carousel-inner {
+    .text-objetivo {
+      background-image: url(/assets/imgs/trees.png);
+      padding: 3rem;
+      position: relative;
+      top: -2rem;
+  }
+    
+  .gradient-inner {
       position: relative;
       width: 100%;
       overflow: hidden;
-      background: linear-gradient(58deg, rgb(84 211 118 / 40%) 17%, rgb(49 220 63 / 23%) 35%, rgb(179 235 214 / 48%) 69%, rgb(44 171 78 / 39%) 97%);
-      padding-bottom: 16rem;
+      background-image: url(../assets/imgs/gradient-resi-2.png);
+        padding-bottom: 15rem;
+        background-position-y: 77%;
+        background-position-x: center;
+        background-size: cover;
     }
     .card-title {
       font-size: 21px;
       font-weight: bold;
     }
-    section.cards-section img {
-      width: 67px;
-  }
+   
     .shape-3.rotate-me{
       height: 100px;
     }
@@ -219,7 +270,36 @@ body {
   ul.list-style-one.clearfix {
     text-align: left;
 }
+.carousel-control-next-icon, .carousel-control-prev{
+  filter: contrast(0.5);
+}
   @media only screen and (max-width: 900px) {
+    
+    .content-box {
+      text-align: center;
+    }
+    .box img {
+      width: 30%;
+  }
+  .gradient-inner {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      margin: auto;
+      padding-top: 207px;
+  }
+  section#materials {
+    height: 47rem;
+}
+.carousel-news {
+ 
+  height: 37rem;
+}
+.carousel-news .card {
+ 
+  margin-bottom: 30px;
+}
+  
    
     img.img-2-silider {
       position: relative;
@@ -303,6 +383,7 @@ body {
     border: solid 10px #20c86e5e;
     padding: 0px !important;
     border-radius: 6px;
+    width: 100%;
 }
   }
   
@@ -312,7 +393,7 @@ body {
     
     width: 113px;
     position: absolute;
-    top: 5rem;
+    top: 3rem;
     left: 0px;
     animation: rotateShape 10s infinite linear;
     right: 0px;
@@ -360,11 +441,9 @@ body {
 
 
 
-.content-box {
-  text-align: left;
-}
+
 .content-box  span.sub-title {
-  color: #33aa39;
+  color: #04b63c;
   font-weight: 600;
 }
 .content-box h2 {
@@ -375,6 +454,7 @@ body {
   color: #575757;
   
 }
+
 .row.clearfix {
   padding-top: 50px;
 
@@ -390,12 +470,12 @@ body {
   top: -43px;
 }
 a.theme-btn.btn-one {
-  background: #33aa39;
+  background: #04b63c;
   color: white;
   text-align: center;
   padding: 10px 25px 10px 25px;
   border-radius: 7px;
-  border: solid 2px #343434;
+
   font-weight: 600;
   text-decoration: none;
 }
@@ -413,6 +493,7 @@ figure.image.image-1 {
   top: -1rem;
 }
 @media only screen and (max-width: 1198px){
+  
   figure.image.image-1 img {
     width: 100%;
     padding: 23px;
@@ -443,11 +524,23 @@ figure.image.image-1 {
 
 
 @media only screen and (min-width: 1199px){
+  .content-box p {
+    width: 75%;
+    padding-top: 1rem;
+  }
+  .content-box {
+    text-align: left;
+  }
+  .image-1 img {
+    width: 400px;
+    height: 700px;
+    object-fit: cover;
+}
   .cards-section {
     padding: 40px 0;
     border-top-right-radius: 6rem;
     position: relative;
-    padding-bottom: 0px;
+    padding-bottom: 35px;
     border-top-left-radius: 6rem;
     background-color: #ffffff;
     
@@ -485,6 +578,7 @@ figure.image.image-1 {
     border: solid 17px white;
     border-radius: 11px;
     box-shadow: 1px 1px 9px 1px #8080804a;
+    width: 320px;
   }
   figure.image.image-2 {
     position: absolute;
@@ -495,17 +589,20 @@ figure.image.image-1 {
     border: solid 17px white;
     border-radius: 11px;
     box-shadow: 1px 1px 9px 1px #8080804a;
+    width: 300px;
+    
   }
   
 }
 
 .background-materials {
-  background-image: url(../assets/imgs/vasurero.jpg);
+  background-image: url(../assets/imgs/img-resi.jpg);
   height: 31rem;
   width: 100%;
   border-bottom-right-radius: 6rem;
   border-bottom-left-radius: 6rem;
-  filter: grayscale(1);
+  filter: brightness(0.8);
+  background-position-y: -53rem;
 }
 .card-materials {
   background: #03ac0b;
