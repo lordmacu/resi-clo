@@ -456,7 +456,7 @@ figure.image.image-1 {
     height: 160px;
 }
   .box {
-    background-image: url(/assets/imgs/tacho.png);
+    background-image: url(assets/imgs/tacho.png);
    
     background-size: contain;
     margin: auto;
@@ -500,7 +500,7 @@ figure.image.image-1 {
 }
 
 .background-materials {
-  background-image: url(/assets/imgs/vasurero.jpg);
+  background-image: url(assets/imgs/vasurero.jpg);
   height: 31rem;
   width: 100%;
   border-bottom-right-radius: 6rem;
