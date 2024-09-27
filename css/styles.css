@@ -41,6 +41,30 @@ body {
  color: white;
  width: 100%;
 }
+section#hero {
+  text-align: center;
+  height: 31rem;
+  padding-top: 11rem;
+  background-image: url('https://html.laralink.com/ecozone/assets/img/page_heading_bg.jpg');
+  position: relative;
+  top: -6rem;
+  color: white;
+
+}
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: end;
+}
+a.nav-link {
+  color: white;
+    font-weight: 400;
+    font-size: 19px;
+    display: flex;
+}
+ul.navbar-nav {
+  column-gap: 37px;
+}
 
   /* Hero Section */
   .hero-section {
@@ -80,14 +104,21 @@ body {
     font-weight: 600;
   }
   .carousel-caption {
-  position: absolute;
-  bottom: 1.25rem;
-  left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  color: #fff;
-  text-align: center;
-  width: 36%;
+    position: absolute;
+    right: 0!important;
+    bottom: 1.25rem;
+    left: 0!important;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+nav.navbar.navbar-expand-lg.navbar-dark {
+  background: #3d3b3200;
+  z-index: 15;
+  box-shadow: none;
+  color: white;
 }
 
   /* Cards Section */
@@ -116,12 +147,40 @@ body {
     height: 120px;
     object-fit: cover;
 }
+.service-box img {
+  width: -webkit-fill-available;
+}
+.service-box .circle {
+  width: 100px;
+  background: #4BAF47;
+  border-radius: 100%;
+  top: -5rem;
+  margin: auto;
+  object-fit: contain;
+  height: 100px;
+  position: relative;
+  padding: 27px;
+  margin-bottom: -3rem;
+}
+figure.image-20 img {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+* h1{
+  font-family: "Oswald", sans-serif;
+}
+span.sub-title {
+  color: #4baf47;
+  font-size: 19px;
+  font-weight: 600;
+}
 
   /* Services Section */
   .services {
-    background: linear-gradient(58deg, rgb(84 211 118 / 40%) 17%, rgb(49 220 63 / 23%) 35%, rgb(179 235 214 / 48%) 69%, rgb(44 171 78 / 39%) 97%);
-
-    padding: 50px 0;
+    background: linear-gradient(58deg, rgb(84 211 118 / 8%) 17%, rgb(49 220 63 / 8%) 35%, rgb(179 235 214 / 11%) 69%, rgb(44 171 78 / 8%) 97%);
+    padding: 100px 0 100px;
+    position: relative;
   }
   .services h2 {
     font-size: 36px;
@@ -132,9 +191,10 @@ body {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
+    height: 250px;
+    margin-top: 5rem;
   }
-
+  
   /* CTA Section */
   .cta-section {
     background-color: #2b7a2b;
@@ -173,13 +233,35 @@ body {
   .image_block_two img {
     width: 100%;
 }
+footer .container.card-materials {
+  position: relative;
+  top: -6rem;
+  padding: 64px;
+}
+.card-materials input {
+  padding: 10px;
+  border-radius: 7px;
+  border: 0px;
+  margin: 10px;
+  box-shadow: 1px 1px 1px 1px #80808045;
+}
+.card-materials button {
+  background: #020902;
+  border: 0px;
+  padding: 10px;
+  border-radius: 7px;
+  color: white;
+}
+footer .container.card-materials span {
+  color: #0a3f0a;
+}
 
   /* Footer */
   footer {
-    background-color: #2d3436;
+    background-image: url(https://html.laralink.com/ecozone/assets/img/nature/footer_bg.jpg);
     color: white;
     padding: 50px 0;
-  }
+}
   footer h5 {
     font-size: 16px;
     margin-bottom: 20px;
@@ -193,9 +275,82 @@ body {
     text-decoration: underline;
   }
   *{
-      font-family: system-ui;
+    font-family: "Fira Sans", sans-serif;
       
   }
+  .fira-sans-regular {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fira-sans-medium {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.fira-sans-semibold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-sans-bold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fira-sans-extrabold {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.fira-sans-black {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.fira-sans-regular-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.fira-sans-medium-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.fira-sans-semibold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.fira-sans-bold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.fira-sans-extrabold-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.fira-sans-black-italic {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+  
  
   .gradient-inner{
     position: relative;
@@ -204,10 +359,7 @@ body {
     background-image: url(../assets/imgs/gradient-resi-2.png);
   }
  
-  .service-box img {
-    width: 40%;
-    padding-bottom: 15px;
-}
+ 
 .text-objetivo h3 {
   color: white;
   width: 100%;
@@ -225,8 +377,7 @@ section.cards-section img {
     .text-objetivo {
       background-image: url(../assets/imgs/trees.png);
       padding: 3rem;
-      position: relative;
-      top: -2rem;
+      
   }
     
   .gradient-inner {
@@ -502,6 +653,7 @@ figure.image.image-1 {
 }
 @media only screen and (max-width: 1198px){
   
+ 
   figure.image.image-1 img {
     width: 100%;
     padding: 23px;
@@ -536,6 +688,9 @@ figure.image.image-1 {
     width: 75%;
     padding-top: 1rem;
   }
+  section#materials {
+    margin-top: 7rem;
+}
   .content-box {
     text-align: left;
   }
@@ -553,6 +708,11 @@ figure.image.image-1 {
     background-color: #ffffff;
     
   }
+  .carousel-news .card {
+    border: 0px;
+    box-shadow: 0px 0px 10px 1px #80808033;
+    border-radius: 0px;
+}
   .cont-box {
     height: 160px;
 }
@@ -617,6 +777,5 @@ figure.image.image-1 {
   color: white;
   padding: 49px;
   border-radius: 17px;
-  position: relative;
-  top: -8rem;
+  
 }
