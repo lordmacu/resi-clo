@@ -43,9 +43,9 @@ body {
 }
 section#hero {
   text-align: center;
-  height: 31rem;
+  padding-bottom: 150px;
   padding-top: 11rem;
-  background-image: url('https://html.laralink.com/ecozone/assets/img/page_heading_bg.jpg');
+  background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
   position: relative;
   top: -6rem;
   color: white;
@@ -166,6 +166,11 @@ figure.image-20 img {
   width: 100%;
   z-index: 10;
   position: relative;
+}
+figure.image.image-2 {
+  padding-right: 0px;
+  position: relative;
+  right: -18px;
 }
 * h1{
   font-family: "Oswald", sans-serif;
@@ -379,6 +384,73 @@ section.cards-section img {
       padding: 3rem;
       
   }
+  .circle-text {
+    right: 14rem;
+    position: absolute;
+    width: 180px!important;
+    top: 19rem;
+    border: solid 50px #00000069;
+    height: 180px;
+    border-radius: 100%;
+    display: block;
+}
+.circle-text img{
+  position: relative;
+        top: -33px;
+        left: -44px;
+        animation: mymove 20s linear infinite;
+        width: 143px;
+    }
+    .text-hero {
+      padding-left: 5rem!important;
+    }
+    .green-point {
+      background: #119711;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -8rem;
+        left: 0.5rem;
+        border-radius: 31px;
+    }
+    
+    .text-hero .carousel-indicators {
+      position: relative;
+      right: 0;
+      bottom: -128px;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 0px;
+      margin-bottom: 1rem;
+      margin-left: 0px;
+      list-style: none;
+      transform: rotate(90deg);
+      height: 10px;
+}
+.text-hero .carousel-indicators [data-bs-target] {
+  width: 14px !important;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #119711;
+}
+.text-hero h1 {
+  font-size: 4.6rem;
+}
+.carousel-indicators [data-bs-target].active {
+  padding-right: 6px;
+  border-radius: 42%;
+  height: 13px;
+  transition: all 0.3s ease;
+}
+
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
+}
+}
     
   .gradient-inner {
       position: relative;
@@ -417,7 +489,7 @@ section.cards-section img {
           padding-top: 3rem;
         }
         
-  }
+  
   ul.list-style-one.clearfix {
     text-align: left;
 }
@@ -431,6 +503,7 @@ img.card-img-top {
 .carousel-news .carousel-item .card-body {
   height: 150px;
 }
+
   @media only screen and (max-width: 900px) {
     
     .content-box {
@@ -446,9 +519,7 @@ img.card-img-top {
       margin: auto;
       padding-top: 207px;
   }
-  section#materials {
-    height: 47rem;
-}
+  
 .carousel-news {
  
   height: 37rem;
@@ -458,7 +529,7 @@ img.card-img-top {
   margin-bottom: 30px;
 }
 
-  
+
    
     img.img-2-silider {
       position: relative;
@@ -651,14 +722,26 @@ figure.image.image-1 {
   left: -10rem;
   top: -1rem;
 }
+
 @media only screen and (max-width: 1198px){
   
- 
+  figure.image.image-2 {
+    width: 100%;
+}
+figure.image.image-2 img {
+  width: 369px;
+}
+figure.image.image-3 img {
+  width: 369px;
+}
   figure.image.image-1 img {
     width: 100%;
     padding: 23px;
     border-radius: 24px;
   }
+  figure.image.image-3 {
+    width: 100%;
+}
   .image-shape {
     position: absolute;
     right: -6rem;
@@ -688,6 +771,11 @@ figure.image.image-1 {
     width: 75%;
     padding-top: 1rem;
   }
+  .text-hero .content-box p {
+    
+    color: white;
+}
+
   section#materials {
     margin-top: 7rem;
 }
@@ -737,27 +825,17 @@ figure.image.image-1 {
     padding-top: 10px;
     font-size: 13px;
   }
-  figure.image.image-3 {
-    position: absolute;
-    top: 10rem;
-    left: -4rem;
-  }
+  
   figure.image.image-3 img{
-    border: solid 17px white;
-    border-radius: 11px;
-    box-shadow: 1px 1px 9px 1px #8080804a;
-    width: 320px;
+    
+    width: 260px;
+    height: 390px;
   }
-  figure.image.image-2 {
-    position: absolute;
-    top: 25rem;
-    left: -7rem;
-  }
+ 
   figure.image.image-2 img{
-    border: solid 17px white;
-    border-radius: 11px;
-    box-shadow: 1px 1px 9px 1px #8080804a;
-    width: 300px;
+   
+    width: 260px;
+    height: 390px;
     
   }
   
