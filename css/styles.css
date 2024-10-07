@@ -771,6 +771,10 @@ figure.image.image-3 img {
     width: 75%;
     padding-top: 1rem;
   }
+  div#carouselExampleIndicators {
+    position: relative;
+    display: flex;
+}
   .text-hero .content-box p {
     
     color: white;
