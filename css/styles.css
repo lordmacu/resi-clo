@@ -7,6 +7,24 @@ body {
   background-color: #ffffff;
   box-shadow: -1px 3px 20px #80808033;
 }
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-collapse {
+  transition: max-height 0.5s ease-out;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      max-height: 0;
+      overflow: hidden;
+  }
+
+  .navbar-collapse.show {
+      max-height: 100vw; /* Ajusta según tu contenido */
+  }
+}
   .navbar a {
     color: rgb(49, 49, 49);
     font-weight: bold;
@@ -41,16 +59,7 @@ body {
  color: white;
  width: 100%;
 }
-section#hero {
-  text-align: center;
-  padding-bottom: 150px;
-  padding-top: 11rem;
-  background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
-  position: relative;
-  top: -6rem;
-  color: white;
 
-}
 .navbar-expand-lg .navbar-collapse {
   display: flex !important;
   flex-basis: auto;
@@ -175,18 +184,18 @@ figure.image.image-2 {
 * h1{
   font-family: "Oswald", sans-serif;
 }
-span.sub-title {
-  color: #4baf47;
+.carousel-indicators span.sub-title {
+  color: #ffffff;
   font-size: 19px;
   font-weight: 600;
 }
 
   /* Services Section */
-  .services {
-    background: linear-gradient(58deg, rgb(84 211 118 / 8%) 17%, rgb(49 220 63 / 8%) 35%, rgb(179 235 214 / 11%) 69%, rgb(44 171 78 / 8%) 97%);
-    padding: 100px 0 100px;
-    position: relative;
-  }
+ 
+  .context-box .circle {
+    padding-bottom: 32px;
+}
+
   .services h2 {
     font-size: 36px;
     margin-bottom: 40px;
@@ -196,8 +205,19 @@ span.sub-title {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    height: 250px;
+    height: 280px;
     margin-top: 5rem;
+  }
+  .service-box-two {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin-top: 5rem;
+  }
+  .service-box-two img{
+    padding-bottom: 15px;
   }
   
   /* CTA Section */
@@ -371,19 +391,64 @@ footer .container.card-materials span {
   padding: 10%;
   text-align: right;
 }
-.carousel-news {
-  padding-bottom: 6rem;
-  padding-top: 2rem;
-}
+
 section.cards-section img {
   width: 67px;
 }
+button.accordion-button {
+  font-weight: 500;
+  font-size: 20px;
+}
+.accordion-button:not(.collapsed)::after {
+  filter: sepia(1);
+}
+section#testimonials {
+  background: #F6FBF6;
+}
+.accordion-item {
+  border: none;
+}
+section#services {
+  padding-bottom: 4rem;
+}
+
+.accordion-button:focus {
+  border-color: #ffffff !important;
+  box-shadow: none!important;
+}
+.accordion-item {
+  margin-bottom: 13px;
+  border: 0px;
+}
+#testimonials h1 {
+  font-size: 37px;
+  padding-bottom: 20px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff!important;
+  color: black!important;
+}
+.accordion-body {
+  color: gray;
+}
+div#accordionFlushquest {
+  color: white;
+}
+button.accordion-button.collapsed:hover {
+  color: #259a2b;
+}
+
   @media only screen and (min-width: 1200px) {
+    .carousel-news {
+      padding-bottom: 6rem;
+      padding-top: 2rem;
+    }
     .text-objetivo {
       background-image: url(../assets/imgs/trees.png);
       padding: 3rem;
       
   }
+  
   .circle-text {
     right: 14rem;
     position: absolute;
@@ -393,16 +458,13 @@ section.cards-section img {
     height: 180px;
     border-radius: 100%;
     display: block;
-}
-.circle-text img{
+  }
+  .circle-text img{
   position: relative;
         top: -33px;
         left: -44px;
         animation: mymove 20s linear infinite;
         width: 143px;
-    }
-    .text-hero {
-      padding-left: 5rem!important;
     }
     .green-point {
       background: #119711;
@@ -413,6 +475,15 @@ section.cards-section img {
         left: 0.5rem;
         border-radius: 31px;
     }
+  
+  .d-none-lg{
+    display: none!important;
+  }
+ 
+    .text-hero {
+      padding-left: 5rem!important;
+    }
+   
     
     .text-hero .carousel-indicators {
       position: relative;
@@ -437,14 +508,25 @@ section.cards-section img {
   margin-right: 10px;
   background-color: #119711;
 }
+
 .text-hero h1 {
   font-size: 4.6rem;
 }
-.carousel-indicators [data-bs-target].active {
+.text-hero .carousel-indicators [data-bs-target].active {
   padding-right: 6px;
   border-radius: 42%;
   height: 13px;
   transition: all 0.3s ease;
+}
+#carouselServicesIndicators .carousel-indicators [data-bs-target]{
+  background-color: #4baf47;
+}
+#carouselServicesIndicators  span.sub-title{
+color:white;
+}
+.carousel-item span.sub-title {
+  font-size: 20px;
+  color: white;
 }
 
 @keyframes mymove {
@@ -503,11 +585,23 @@ img.card-img-top {
 .carousel-news .carousel-item .card-body {
   height: 150px;
 }
+.carousel-indicators [data-bs-target]{
+  background-color: #4baf47!important;
+}
 
   @media only screen and (max-width: 900px) {
     
-    .content-box {
+    #carousecontexMobile .carousel-item {
+      display: block !important;
       text-align: center;
+  }
+
+  #carousecontexMobile .carousel-item .col-md-4 {
+      max-width: 100%;
+      flex: 0 0 100%;
+  }
+    .content-box {
+      text-align: left;
     }
     .box img {
       width: 30%;
@@ -520,12 +614,9 @@ img.card-img-top {
       padding-top: 207px;
   }
   
-.carousel-news {
- 
-  height: 37rem;
-}
+
 .carousel-news .card {
- 
+  padding: 28px;
   margin-bottom: 30px;
 }
 
@@ -604,15 +695,11 @@ img.card-img-top {
         
       
     
-    .image-box.pl_130.ml_30 {
-      position: relative;
-      padding: 32px;
-      margin-top: 63px;
-  }
+    
   .image_block_one .image img {
-    border: solid 10px #20c86e5e;
+
     padding: 0px !important;
-    border-radius: 6px;
+   
     width: 100%;
 }
   }
@@ -639,8 +726,19 @@ img.card-img-top {
 }
 .carousel-item {
   max-width: 100%;
-  height: 400px;
+  
   object-fit: cover;
+}
+#carouselServicesIndicators .carousel-item {
+  max-width: 100%;
+  object-fit: cover;
+  margin-bottom: 7rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+div#carouselServicesIndicators {
+  background-image: url('../assets/imgs/background-green.png');
+  background-repeat: no-repeat;
 }
 .shape-1 {
   
@@ -672,10 +770,7 @@ img.card-img-top {
 
 
 
-.content-box  span.sub-title {
-  color: #04b63c;
-  font-weight: 600;
-}
+
 .content-box h2 {
   font-weight: 700;
 }
@@ -684,30 +779,31 @@ img.card-img-top {
   color: #575757;
   
 }
-
-.row.clearfix {
-  padding-top: 50px;
-
-  
+.sec-title {
+  margin-top: 55px;
+}
+.content-box.mr_40 {
+  padding-bottom: 4rem;
 }
 .row.clearfix-2 {
   padding-top: 50px;
   margin-bottom: -16px;
   
 }
-.image-shape-87 {
-  position: absolute;
-  top: -43px;
-}
+
+
 a.theme-btn.btn-one {
   background: #04b63c;
   color: white;
   text-align: center;
-  padding: 10px 25px 10px 25px;
+  padding: 17px;
   border-radius: 7px;
-
   font-weight: 600;
   text-decoration: none;
+  border-radius: 0px;
+  display: block;
+  box-shadow: 8px 6px 1px 1px #087429 !important;
+  width: 50%;
 }
 figure.image.image-1 {
   position: relative;
@@ -722,23 +818,118 @@ figure.image.image-1 {
   left: -10rem;
   top: -1rem;
 }
+.content-box span.sub-title {
+  color: #4db152;
+  font-weight: 700;
+}
+
 
 @media only screen and (max-width: 1198px){
-  
-  figure.image.image-2 {
-    width: 100%;
+  div#carouselServicesIndicators .carousel-inner {
+    position: relative;
+    top: -2px;
 }
-figure.image.image-2 img {
-  width: 369px;
+div#carouselServicesIndicators .text-card {
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+div#carouselServicesIndicators .sub-title {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+  .cifras h1.cs_funfact_number.cs_fs_70.mb-0 {
+    font-size: 53px;
+    padding-bottom: 37px;
+    padding-right: 20px;
+}
+section#testimonials .image-column {
+  height: 15rem;
+  padding: 16px;
+}
+section#testimonials .sub-title {
+  color: #2fb12f;
+  font-size: 20px;
+}
+.cifras p.cs_funfact_title {
+  padding-top: 12px;
+}
+  .circle-text {
+    position: absolute;
+}
+.content-box  span.sub-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+@keyframes mymove {
+  100% {transform: rotate(360deg);}
 }
 figure.image.image-3 img {
-  width: 369px;
+  width: 100%;
 }
-  figure.image.image-1 img {
-    width: 100%;
-    padding: 23px;
-    border-radius: 24px;
+.circle-text {
+  right: 7rem;
+  position: absolute;
+  width: 180px !important;
+  top: 6rem;
+  border: solid 50px #00000069;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
+}
+}
+.circle-text img{
+position: relative;
+      top: -33px;
+      left: -44px;
+      animation: mymove 20s linear infinite;
+      width: 143px;
   }
+  figure.image.image-2 img {
+    width: 100%;
+}
+  .green-point {
+    background: #119711;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -8rem;
+      left: 0.5rem;
+      border-radius: 31px;
+  }
+  .d-none-sm{
+    display: none!important;
+  }
+  section#hero {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 3rem;
+    background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
+    position: relative;
+    
+    color: white;
+  
+  }
+
+  a.theme-btn.btn-one {
+    background: #04b63c;
+    color: white;
+    text-align: center;
+    padding: 17px;
+    border-radius: 7px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0px;
+    display: block;
+    box-shadow: 8px 6px 1px 1px #087429 !important;
+    width: 100%;
+  }
+  
+ 
+
+
+  
   figure.image.image-3 {
     width: 100%;
 }
@@ -762,16 +953,56 @@ figure.image.image-3 img {
   
 }
   
+
+
+.image-shape-99 img {
+  width: 100%;
 }
 
-
-
 @media only screen and (min-width: 1199px){
+  .d-none-sm{
+    display: block!important;
+  }
+
+  .image-shape-87 img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    top: -89px;
+    left: 0px;
+}
+  .container.cifras h1 {
+    font-size: 61px;
+    padding-right: 14px;
+  }
+  .container.cifras {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.context-box {
+  padding-right: 44px;
+  padding-bottom: 3rem;
+}
+  p.cs_funfact_title.mb-0 {
+    position: relative;
+    padding-top: 1.3rem;
+}
+  section#hero {
+    text-align: center;
+    padding-bottom: 150px;
+    padding-top: 11rem;
+    background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
+    position: relative;
+    top: -6rem;
+    color: white;
+  
+  }
   .content-box p {
     width: 75%;
     padding-top: 1rem;
   }
-  div#carouselExampleIndicators {
+  div#carouselHeroIndicators {
     position: relative;
     display: flex;
 }
@@ -804,6 +1035,7 @@ figure.image.image-3 img {
     border: 0px;
     box-shadow: 0px 0px 10px 1px #80808033;
     border-radius: 0px;
+    padding: 42px;
 }
   .cont-box {
     height: 160px;
@@ -843,6 +1075,13 @@ figure.image.image-3 img {
     
   }
   
+}
+div#carouselinfoControlsNoTouching .card .btn-box a {
+  width: 100%;
+  padding: 16px;
+  border-radius: 0px;
+  display: block;
+  box-shadow: 8px 6px 1px 1px #087429 !important;
 }
 
 .background-materials {
