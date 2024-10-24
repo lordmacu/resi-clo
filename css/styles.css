@@ -31,12 +31,13 @@ body {
     transition: width 2s, height 4s;
 }
   button.navbar-toggler.collapsed {
-    position: absolute;
-    right: 22px;
-    filter: brightness(10);
+    position: absolute!important;
+    right: 22px!important;
+    filter: brightness(10)!important;
 }
 button.navbar-toggler {
   filter: brightness(8);
+  
 }
   nav.navbar.navbar-expand-lg.navbar-dark {
     
