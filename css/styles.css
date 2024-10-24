@@ -20,7 +20,28 @@ body {
       max-height: 0;
       overflow: hidden;
   }
-
+  .show ul.navbar-nav {
+    column-gap: 37px!important;
+    background: #2fc15c82!important;
+    position: fixed!important;
+    height: 100%!important;
+    top: 0px!important;
+    padding: 21px!important;
+    right: 1px!important;
+    transition: width 2s, height 4s;
+}
+  button.navbar-toggler.collapsed {
+    position: absolute;
+    right: 22px;
+    filter: brightness(10);
+}
+button.navbar-toggler {
+  filter: brightness(8);
+}
+  nav.navbar.navbar-expand-lg.navbar-dark {
+    
+    background-image: url(https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg)!important;
+}
   .navbar-collapse.show {
       max-height: 100vw; /* Ajusta según tu contenido */
   }
