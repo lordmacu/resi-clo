@@ -30,10 +30,35 @@ body {
     right: 1px!important;
     transition: width 2s, height 4s;
 }
+div#carouselServicesIndicators .carousel-control-prev {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -12rem!important;
+  filter: brightness(8)!important;
+}
+div#carouselinfoControlsNoTouching button {
+  justify-content: space-around;
+  display: flex;
+  position: absolute;
+  top: -40rem!important;
+  filter: invert(1);
+}
+div#carouselServicesIndicators .carousel-control-next {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -12rem!important;
+  filter: brightness(3);
+}
   button.navbar-toggler.collapsed {
     position: absolute!important;
     right: 22px!important;
     filter: brightness(10)!important;
+}
+.container-fluid.text-objetivo.text-center {
+  margin-bottom: 6rem;
+  margin-top: -27px;
 }
 button.navbar-toggler {
   filter: brightness(8);
@@ -503,6 +528,9 @@ button.accordion-button.collapsed:hover {
       position: relative;
       top: 6rem;
   }
+  .content-box.mr_40 {
+    padding-bottom: 4rem;
+  }
     
     .carousel-news {
       padding-bottom: 6rem;
@@ -849,9 +877,7 @@ div#carouselServicesIndicators {
 .sec-title {
   margin-top: 15px;
 }
-.content-box.mr_40 {
-  padding-bottom: 4rem;
-}
+
 .row.clearfix-2 {
   padding-top: 50px;
   margin-bottom: -16px;
@@ -896,6 +922,7 @@ figure.image.image-1 {
     position: relative;
     top: -2px;
 }
+
 .green-point {
   background: #119711;
   width: 40px;
