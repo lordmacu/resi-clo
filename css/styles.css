@@ -512,19 +512,11 @@ button.accordion-button.collapsed:hover {
   .circle-text img{
   position: relative;
         top: -33px;
-        left: -31px;
+        left: -44px;
         animation: mymove 20s linear infinite;
         width: 143px;
     }
-    .green-point {
-      background: #119711;
-        width: 40px;
-        height: 40px;
-        position: relative;
-        top: -8rem;
-    left: 1.3rem;
-        border-radius: 31px;
-    }
+   
   
   .d-none-lg{
     display: none!important;
@@ -644,6 +636,9 @@ img.card-img-top {
     #carousecontexMobile .carousel-item {
       display: block !important;
       text-align: center;
+  }
+  .d-none-sm{
+    display: none!important;
   }
 
   #carousecontexMobile .carousel-item .col-md-4 {
@@ -879,6 +874,22 @@ figure.image.image-1 {
     position: relative;
     top: -2px;
 }
+.green-point {
+  background: #119711;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: -8rem;
+  left: 0.3rem;
+  border-radius: 31px;
+}
+.circle-text img{
+  position: relative;
+        top: -33px;
+        left: -44px;
+        animation: mymove 20s linear infinite;
+        width: 143px;
+    }
 div#carouselServicesIndicators .text-card {
   text-align: center;
   position: relative;
@@ -919,7 +930,7 @@ figure.image.image-3 img {
   width: 100%;
 }
 .circle-text {
-  right: 7rem;
+  right: 9rem;
   position: absolute;
   width: 180px !important;
   top: 6rem;
@@ -929,25 +940,11 @@ figure.image.image-3 img {
   display: block;
 }
 }
-.circle-text img{
-position: relative;
-      top: -33px;
-      left: -31px;
-      animation: mymove 20s linear infinite;
-      width: 143px;
-  }
+
   figure.image.image-2 img {
     width: 100%;
 }
-  .green-point {
-    background: #119711;
-      width: 40px;
-      height: 40px;
-      position: relative;
-      top: -8rem;
-    left: 1.3rem;
-      border-radius: 31px;
-  }
+ 
   
   section#hero {
     text-align: center;
@@ -1006,11 +1003,34 @@ position: relative;
 .image-shape-99 img {
   width: 100%;
 }
+.modal-footer a img {
+  width: 170px;
+  height: 55px;
+  cursor: pointer;
+  
+}
+.modal-footer a img:hover{
+  box-shadow: 0px 0px 7px 0px #13b1448a;
+}
 
 @media only screen and (min-width: 1199px){
-  .d-none-sm{
-    display: block!important;
+  
+  .green-point {
+    background: #119711;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -8rem;
+  left: 1.3rem;
+      border-radius: 31px;
   }
+  .circle-text img{
+    position: relative;
+          top: -33px;
+          left: -31px;
+          animation: mymove 20s linear infinite;
+          width: 143px;
+      }
 
   .image-shape-87 img {
     width: 200px;
