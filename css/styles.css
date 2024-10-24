@@ -37,7 +37,7 @@ body {
   font-size: 26px;
   letter-spacing: -1px;
 }.navbar-brand img {
-  width: 40px;
+  width: 55px;
   margin-right: 10px;
   filter: contrast(0.7);
 }
@@ -404,12 +404,49 @@ button.accordion-button {
 }
 section#testimonials {
   background: #F6FBF6;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 .accordion-item {
   border: none;
 }
 section#services {
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  background: #4baf4714;
+}
+div#carouselinfoControlsNoTouching {
+  position: relative;
+}
+div#carouselServicesIndicators .text-card {
+  color: white;
+}
+div#carouselServicesIndicators{
+  position: relative;
+}
+div#carouselServicesIndicators .carousel-control-prev {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -19rem;
+  filter: invert(1);
+}
+div#carouselServicesIndicators  .carousel-control-next {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  top: -19rem;
+  filter: brightness(3);
+}
+div#carouselServicesIndicators button {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+div#carouselinfoControlsNoTouching button {
+  justify-content: space-around;
+  display: flex;
+  position: absolute;
+  top: -30rem;
 }
 
 .accordion-button:focus {
@@ -454,12 +491,19 @@ button.accordion-button.collapsed:hover {
       padding: 3rem;
       
   }
+  .carousel-control-prev-icon{
+    filter: invert(1);
+  }
+  
+  button.carousel-control-next{
+    filter: invert(1);
+  }
   
   .circle-text {
-    right: 14rem;
+    right: -83px;
     position: absolute;
-    width: 180px!important;
-    top: 19rem;
+    width: 180px !important;
+    top: 11rem;
     border: solid 50px #00000069;
     height: 180px;
     border-radius: 100%;
@@ -468,7 +512,7 @@ button.accordion-button.collapsed:hover {
   .circle-text img{
   position: relative;
         top: -33px;
-        left: -44px;
+        left: -31px;
         animation: mymove 20s linear infinite;
         width: 143px;
     }
@@ -478,7 +522,7 @@ button.accordion-button.collapsed:hover {
         height: 40px;
         position: relative;
         top: -8rem;
-        left: 0.5rem;
+    left: 1.3rem;
         border-radius: 31px;
     }
   
@@ -786,7 +830,7 @@ div#carouselServicesIndicators {
   
 }
 .sec-title {
-  margin-top: 55px;
+  margin-top: 15px;
 }
 .content-box.mr_40 {
   padding-bottom: 4rem;
@@ -888,7 +932,7 @@ figure.image.image-3 img {
 .circle-text img{
 position: relative;
       top: -33px;
-      left: -44px;
+      left: -31px;
       animation: mymove 20s linear infinite;
       width: 143px;
   }
@@ -901,7 +945,7 @@ position: relative;
       height: 40px;
       position: relative;
       top: -8rem;
-      left: 0.5rem;
+    left: 1.3rem;
       border-radius: 31px;
   }
   
@@ -973,7 +1017,7 @@ position: relative;
     height: 200px;
     object-fit: cover;
     position: absolute;
-    top: -89px;
+    top: -62px;
     left: 0px;
 }
   .container.cifras h1 {
@@ -981,9 +1025,10 @@ position: relative;
     padding-right: 14px;
   }
   .container.cifras {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    position: relative;
+    top: -6rem;
 }
+
 .context-box {
   padding-right: 44px;
   padding-bottom: 3rem;
@@ -998,7 +1043,7 @@ position: relative;
     padding-top: 11rem;
     background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
     position: relative;
-    top: -6rem;
+    top: -8rem;
     color: white;
   
   }
@@ -1103,4 +1148,39 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
   padding: 49px;
   border-radius: 17px;
   
+}
+.scroll-to-hero {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #06d547;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+}
+.scroll-to-hero svg.bi.bi-arrow-up-short {
+  width: 32px;
+  height: 50px;
+  position: relative;
+  top: -8px;
+}
+.scroll-to-hero:hover {
+  background-color: #2b7a2b;
+}
+
+.scroll-to-hero i {
+  font-size: 36px;
+}
+#dynamic-image-column {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%; /* Asegúrate de que tenga una altura definida */
+  transition: background-image 0.5s ease-in-out;
 }
