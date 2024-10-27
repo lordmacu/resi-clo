@@ -684,6 +684,7 @@ img.card-img-top {
 }
 
   @media only screen and (max-width: 900px) {
+    
     .text-objetivo img {
     width: 59px;
     margin-top: 3rem;
@@ -939,6 +940,12 @@ figure.image.image-1 {
 
 
 @media only screen and (max-width: 1198px){
+  .btn-box.mt-lg-5.d-none-lg.button-flotante {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    bottom: 0px;
+}
   div#carouselServicesIndicators .carousel-inner {
     position: relative;
     top: -2px;
@@ -1236,7 +1243,7 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
 }
 .scroll-to-hero {
   position: fixed;
-  bottom: 20px;
+  bottom: 95px;
   right: 20px;
   background-color: #9bc064;
   color: white;
