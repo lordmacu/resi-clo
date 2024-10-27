@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   }
 
   /* Navbar */
@@ -16,13 +16,14 @@ body {
 }
 
 @media (max-width: 991.98px) {
+ 
   .navbar-collapse {
       max-height: 0;
       overflow: hidden;
   }
   .show ul.navbar-nav {
     column-gap: 37px!important;
-    background: #08872fc2 !important;
+    background: #8cc150a3 !important;
     position: fixed!important;
     height: 100%!important;
     top: 0px!important;
@@ -66,7 +67,7 @@ button.navbar-toggler {
 }
   nav.navbar.navbar-expand-lg.navbar-dark {
     
-    background-image: url(https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg)!important;
+    background-image: url('../assets/imgs/hero_bg.jpg')!important;
 }
   .navbar-collapse.show {
       max-height: 100vw; /* Ajusta según tu contenido */
@@ -115,7 +116,7 @@ button.navbar-toggler {
 a.nav-link {
   color: white;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 17px;
     display: flex;
 }
 ul.navbar-nav {
@@ -152,7 +153,7 @@ ul.navbar-nav {
   }
   .carousel-caption a {
     padding: 10px 20px;
-    background-color: #04b63c;
+    background-color: #9bc064;
     color: #ffffff;
     border-radius: 10px;
     text-decoration: none;
@@ -229,7 +230,7 @@ figure.image.image-2 {
   right: -18px;
 }
 * h1{
-  font-family: "Oswald", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .carousel-indicators span.sub-title {
   color: #ffffff;
@@ -265,11 +266,12 @@ figure.image.image-2 {
   }
   .service-box-two img{
     padding-bottom: 15px;
+    filter: grayscale(1);
   }
   
   /* CTA Section */
   .cta-section {
-    background-color: #2b7a2b;
+    background-color: #9bc064;
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -347,77 +349,77 @@ footer .container.card-materials span {
     text-decoration: underline;
   }
   *{
-    font-family: "Fira Sans", sans-serif;
+   font-family: "Montserrat", sans-serif;
       
   }
   .fira-sans-regular {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .fira-sans-medium {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .fira-sans-semibold {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 
 .fira-sans-bold {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .fira-sans-extrabold {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
 
 .fira-sans-black {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
 .fira-sans-regular-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .fira-sans-medium-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: italic;
 }
 
 .fira-sans-semibold-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-style: italic;
 }
 
 .fira-sans-bold-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
 .fira-sans-extrabold-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-style: italic;
 }
 
 .fira-sans-black-italic {
-  font-family: "Fira Sans", sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-style: italic;
 }
@@ -459,7 +461,7 @@ section#testimonials {
 }
 section#services {
   padding-top: 5rem;
-  background: #4baf4714;
+  background: #9bc06421;
 }
 div#carouselinfoControlsNoTouching {
   position: relative;
@@ -493,7 +495,7 @@ div#carouselinfoControlsNoTouching button {
   justify-content: space-around;
   display: flex;
   position: absolute;
-  top: -30rem;
+  top: -35rem;
 }
 
 .accordion-button:focus {
@@ -598,11 +600,11 @@ button.accordion-button.collapsed:hover {
   height: 14px;
   border-radius: 50%;
   margin-right: 10px;
-  background-color: #119711;
+  background-color: #9bc064;
 }
 
 .text-hero h1 {
-  font-size: 4.6rem;
+  font-size: 62px;
 }
 .text-hero .carousel-indicators [data-bs-target].active {
   padding-right: 6px;
@@ -678,15 +680,34 @@ img.card-img-top {
   height: 150px;
 }
 .carousel-indicators [data-bs-target]{
-  background-color: #4baf47!important;
+  background-color: #9bc064!important;
 }
 
   @media only screen and (max-width: 900px) {
+    .text-objetivo img {
+    width: 59px;
+    margin-top: 3rem;
+}
+    #carouselHeroIndicators .carousel-indicators {
+      position: relative;
+  }
     
     #carousecontexMobile .carousel-item {
       display: block !important;
       text-align: center;
   }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    position: relative!important;
+    top: -14px!important;
+  }
+  div#carouselinfoControlsNoTouching {
+    position: relative;
+}
+.button-control {
+  position: absolute;
+  top: 17rem;
+  width: 100%;
+}
   .d-none-sm{
     display: none!important;
   }
@@ -726,7 +747,7 @@ img.card-img-top {
   }
      /* Estilos personalizados para la tarjeta */
      .custom-card {
-      background-color: #69e389;
+      background-color: #9bc064;
       border-radius: 20px;
       padding: 20px;
       color: white;
@@ -886,7 +907,7 @@ div#carouselServicesIndicators {
 
 
 a.theme-btn.btn-one {
-  background: #04b63c;
+  background: #009ddc;
   color: white;
   text-align: center;
   padding: 17px;
@@ -895,8 +916,8 @@ a.theme-btn.btn-one {
   text-decoration: none;
   border-radius: 0px;
   display: block;
-  box-shadow: 8px 6px 1px 1px #087429 !important;
-  width: 50%;
+  box-shadow: 8px 6px 1px 1px #065683 !important;
+  width: 100%;
 }
 figure.image.image-1 {
   position: relative;
@@ -912,7 +933,7 @@ figure.image.image-1 {
   top: -1rem;
 }
 .content-box span.sub-title {
-  color: #4db152;
+  color: #9bc064;
   font-weight: 700;
 }
 
@@ -924,7 +945,7 @@ figure.image.image-1 {
 }
 
 .green-point {
-  background: #119711;
+  background: #009ddc;
   width: 40px;
   height: 40px;
   position: relative;
@@ -950,7 +971,7 @@ div#carouselServicesIndicators .sub-title {
   font-weight: 400;
 }
   .cifras h1.cs_funfact_number.cs_fs_70.mb-0 {
-    font-size: 53px;
+    font-size: 31px;
     padding-bottom: 37px;
     padding-right: 20px;
 }
@@ -999,15 +1020,15 @@ figure.image.image-3 img {
     text-align: center;
     padding-bottom: 150px;
     padding-top: 3rem;
-    background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
+    background-image: url('../assets/imgs/hero_bg.jpg');
     position: relative;
-    
+    background-repeat: repeat-x;
     color: white;
   
   }
 
   a.theme-btn.btn-one {
-    background: #04b63c;
+    background: #009ddc;
     color: white;
     text-align: center;
     padding: 17px;
@@ -1016,7 +1037,7 @@ figure.image.image-3 img {
     text-decoration: none;
     border-radius: 0px;
     display: block;
-    box-shadow: 8px 6px 1px 1px #087429 !important;
+    box-shadow: 8px 6px 1px 1px #065683 !important;
     width: 100%;
   }
   
@@ -1057,11 +1078,11 @@ figure.image.image-3 img {
 @media only screen and (min-width: 1199px){
   
   .green-point {
-    background: #119711;
+    background: #009ddc;
       width: 40px;
       height: 40px;
       position: relative;
-      top: -8rem;
+      top: -7.6rem;
   left: 1.3rem;
       border-radius: 31px;
   }
@@ -1093,6 +1114,7 @@ figure.image.image-3 img {
 .context-box {
   padding-right: 44px;
   padding-bottom: 3rem;
+  filter: grayscale(1);
 }
   p.cs_funfact_title.mb-0 {
     position: relative;
@@ -1100,14 +1122,14 @@ figure.image.image-3 img {
 }
   section#hero {
     text-align: center;
-    padding-bottom: 150px;
+    padding-bottom: 85px;
     padding-top: 11rem;
-    background-image: url('https://html.laralink.com/ecozone/assets/img/nature/hero_bg.jpg');
+    background-image: url('../assets/imgs/hero_bg.jpg');
     position: relative;
     top: -8rem;
     color: white;
-  
-  }
+    background-repeat: repeat-x;
+}
   .content-box p {
     width: 75%;
     padding-top: 1rem;
@@ -1191,7 +1213,7 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
   padding: 16px;
   border-radius: 0px;
   display: block;
-  box-shadow: 8px 6px 1px 1px #087429 !important;
+ 
 }
 
 .background-materials {
@@ -1204,7 +1226,7 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
   background-position-y: -53rem;
 }
 .card-materials {
-  background: #65ca6a;
+  background: #009ddc;
   color: white;
   padding: 49px;
   border-radius: 17px;
@@ -1214,7 +1236,7 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #06d547;
+  background-color: #9bc064;
   color: white;
   padding: 10px;
   border-radius: 50%;
@@ -1232,7 +1254,7 @@ div#carouselinfoControlsNoTouching .card .btn-box a {
   top: -8px;
 }
 .scroll-to-hero:hover {
-  background-color: #2b7a2b;
+  background-color: #9bc064;
 }
 
 .scroll-to-hero i {

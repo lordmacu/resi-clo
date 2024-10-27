@@ -10,14 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -198,27 +191,27 @@
     </section>
     <!-- End Carousel Section -->
 
-    <div class="container cifras">
+    <div class="container cifras d-none-sm">
         <div class="row">
-            <div class="col-lg-3 d-flex">
+            <div class="col-lg-3 col-6 d-flex">
                 <h1 class="cs_funfact_number cs_fs_70 mb-0">
                     5kg
                 </h1>
                 <p class="cs_funfact_title mb-0">Material <br>Platicos</p>
             </div>
-            <div class="col-lg-3 d-flex">
+            <div class="col-lg-3 col-6 d-flex">
                 <h1 class="cs_funfact_number cs_fs_70 mb-0">
                     110kg
                 </h1>
                 <p class="cs_funfact_title mb-0">Material <br>Cartón y Papel </p>
             </div>
-            <div class="col-lg-3 d-flex">
+            <div class="col-lg-3 col-6 d-flex">
                 <h1 class="cs_funfact_number cs_fs_70 mb-0">
                     200kg
                 </h1>
                 <p class="cs_funfact_title mb-0">Material <br>Eléctricos</p>
             </div>
-            <div class="col-lg-3 d-flex">
+            <div class="col-lg-3 col-6 d-flex">
                 <h1 class="cs_funfact_number cs_fs_70 mb-0">
                     2kg
                 </h1>
@@ -356,12 +349,12 @@
                     <!-- End Services Section -->
                 </div>
                 <div class="col-12 mb-5">
-                    <div class="sec-title text-center">
+                    
+                    <div class="sec-title text-center mt-5 mb-5">
 
                         <h1>Servicios
                         </h1>
                     </div>
-
                     <!-- Carousel Container -->
                     <div id="carouselinfoControlsNoTouching" class="carousel slide" data-bs-touch="false"
                         data-bs-interval="false">
@@ -369,18 +362,21 @@
                         <div class="carousel-inner carousel-news" id="carousel-items">
                             <!-- Las tarjetas serán generadas aquí dinámicamente -->
                         </div>
+                       
 
-                        <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselinfoControlsNoTouching" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselinfoControlsNoTouching" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                       <div class="button-control">
+                         <!-- Carousel Controls -->
+                         <button class="carousel-control-prev" type="button"
+                         data-bs-target="#carouselinfoControlsNoTouching" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button"
+                         data-bs-target="#carouselinfoControlsNoTouching" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                       </div>
                     </div>
                 </div>
             </div>
@@ -472,7 +468,7 @@
     <!---slider cards-->
 
     <!-- Features Section -->
-    <section class="features text-center pb-0" id="aliados">
+    <section class="features text-center pb-0 mt-lg-5" id="aliados">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -526,7 +522,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 image-column" id="dynamic-image-column"
-                    style="background-image: url('assets/imgs/cadena.png'); background-size: contain;     margin-bottom: 24px; background-repeat: no-repeat; height: 22rem;">
+                    style="    filter: hue-rotate(333deg); background-image: url('assets/imgs/cadena.png'); background-size: contain;     margin-bottom: 24px; background-repeat: no-repeat; height: 22rem;">
                 </div>
 
             </div>
@@ -569,11 +565,22 @@
             <div class="row">
                 <div class="col-md-4">
                     <h5>Links</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Quiénes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impacto">Impacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aliados">Aliados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#report">Reporta vertedero</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-4">
