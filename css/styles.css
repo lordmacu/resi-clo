@@ -945,7 +945,8 @@ figure.image.image-1 {
 }
 
 .green-point {
-  background: #009ddc;
+  background: rgb(16, 156, 217);
+        background: linear-gradient(145deg, rgba(16, 156, 217, 1) 26%, rgba(155, 192, 100, 1) 62%);
   width: 40px;
   height: 40px;
   position: relative;
@@ -1078,7 +1079,8 @@ figure.image.image-3 img {
 @media only screen and (min-width: 1199px){
   
   .green-point {
-    background: #009ddc;
+    background: rgb(16, 156, 217);
+        background: linear-gradient(145deg, rgba(16, 156, 217, 1) 26%, rgba(155, 192, 100, 1) 62%);
       width: 40px;
       height: 40px;
       position: relative;
