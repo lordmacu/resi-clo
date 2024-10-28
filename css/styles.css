@@ -30,6 +30,7 @@ body {
     padding: 21px!important;
     right: 1px!important;
     transition: width 2s, height 4s;
+    z-index: 100;
 }
 div#carouselServicesIndicators .carousel-control-prev {
   position: absolute;
