@@ -938,8 +938,15 @@ figure.image.image-1 {
   font-weight: 700;
 }
 
+.modal-dialog {
+  position: relative;
+  top: 20%;
+}
 
 @media only screen and (max-width: 1198px){
+  .context-box {
+    margin-bottom: 50px;
+}
   .btn-box.mt-lg-5.d-none-lg.button-flotante {
     position: fixed;
     z-index: 100;
