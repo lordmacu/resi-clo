@@ -14,8 +14,35 @@ body {
 .navbar-collapse {
   transition: max-height 0.5s ease-out;
 }
+nav#hero-2 {
+  text-align: center;
+  background-image: url('../assets/imgs/hero_bg_2.jpg');
+  position: relative;
+  background-repeat: repeat-x;
+  color: white;
+}
+button#navbar-toggler {
+  color: #ffffff;
+}
+
+
+      
+.navbar-toggler {
+              display: none;
+          }
 
 @media (max-width: 991.98px) {
+  .navbar-toggler {
+    display: block;
+  }
+  .moving-btn {
+    position: absolute;
+    left: 100px;
+  }
+  
+  .navbar-collapse.show .navbar-nav {
+    display: flex;
+  }
  
   .navbar-collapse {
       max-height: 0;
